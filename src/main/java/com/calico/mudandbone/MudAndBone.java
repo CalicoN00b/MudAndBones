@@ -2,9 +2,12 @@ package com.calico.mudandbone;
 
 import org.slf4j.Logger;
 
+import com.calico.mudandbone.entity.ModEntities;
 import com.calico.mudandbone.item.ModItems;
 import com.mojang.logging.LogUtils;
 
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -41,6 +44,7 @@ public class MudAndBone {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -68,7 +72,11 @@ public class MudAndBone {
     public static class ClientModEvents {
 
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {}
+        public static void onClientSetup(FMLClientSetupEvent event) {
+
+            EntityRenderers.register(ModEntities.LIGHTNING_SCROLL.get(), ThrownItemRenderer::new);
+
+        }
 
     }
 }
