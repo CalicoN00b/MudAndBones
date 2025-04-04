@@ -1,4 +1,9 @@
 {
-  "item.mud_and_bone.lightning_scroll": "Lighning Scroll",
-  "item.mud_and_bone.heart_scroll": "Heart Scroll"
+  "item.mud_and_bone.lightning_bolt": "Lightning Bolt",
+  "item.mud_and_bone.lightning_scroll": "Lightning Scroll",
+  "item.mud_and_bone.heart_scroll": "Heart Scroll",
+
+  "tooltip.mud_and_bone.lightning_bolt": "How are you holding raw electricity in your hands? §cYou shouldn't have this§r.",
+  "tooltip.mud_and_bone.lightning_scroll": "Throw a §bLightning Bolt§r!",
+  "tooltip.mud_and_bone.heart_scroll": "Permanently increase your health by §c1 heart (2 health)§r, up to §c30 hearts (60 health)§r"
 }

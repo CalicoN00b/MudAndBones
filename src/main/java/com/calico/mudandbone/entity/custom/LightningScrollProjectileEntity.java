@@ -59,7 +59,7 @@ public class LightningScrollProjectileEntity extends ThrowableItemProjectile {
 
     @Override
     public double getDefaultGravity() {
-        return 0.01;
+        return 0.03;
     }
     
 }
