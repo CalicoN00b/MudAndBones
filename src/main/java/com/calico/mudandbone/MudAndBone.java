@@ -74,7 +74,7 @@ public class MudAndBone {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
-            EntityRenderers.register(ModEntities.LIGHTNING_SCROLL.get(), ThrownItemRenderer::new);
+            EntityRenderers.register(ModEntities.LIGHTNING_BOLT.get(), ThrownItemRenderer::new);
 
         }
 

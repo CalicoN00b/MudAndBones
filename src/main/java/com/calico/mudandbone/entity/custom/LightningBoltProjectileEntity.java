@@ -14,23 +14,23 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 
-public class LightningScrollProjectileEntity extends ThrowableItemProjectile {
+public class LightningBoltProjectileEntity extends ThrowableItemProjectile {
 
-    public LightningScrollProjectileEntity(EntityType<? extends LightningScrollProjectileEntity> entityType, Level level) {
+    public LightningBoltProjectileEntity(EntityType<? extends LightningBoltProjectileEntity> entityType, Level level) {
         super(entityType, level);
     }
 
-    public LightningScrollProjectileEntity(Level level, LivingEntity shooter) {
-        super(ModEntities.LIGHTNING_SCROLL.get(), shooter, level);
+    public LightningBoltProjectileEntity(Level level, LivingEntity shooter) {
+        super(ModEntities.LIGHTNING_BOLT.get(), shooter, level);
     }
 
-    public LightningScrollProjectileEntity(Level level, double x, double y, double z) {
-        super(ModEntities.LIGHTNING_SCROLL.get(), x, y, z, level);
+    public LightningBoltProjectileEntity(Level level, double x, double y, double z) {
+        super(ModEntities.LIGHTNING_BOLT.get(), x, y, z, level);
     }
 
     @Override
     protected Item getDefaultItem() {
-        return ModItems.LIGHTNING_SCROLL.get();
+        return ModItems.LIGHTNING_BOLT.get();
     }
 
     @Override
